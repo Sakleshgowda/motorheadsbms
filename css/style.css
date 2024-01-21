@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #D81324;
+    --primary: #d035b3;
     --secondary: #0B2154;
     --light: #F2F2F2;
     --dark: #111111;
@@ -168,7 +168,76 @@
         position: relative;
         min-height: 450px;
     }
+
+/* Default styles for larger screens */
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Default styles for larger screens */
+.carousel-item {
+    position: relative;
+    display: none;
+}
+
+/* Styles for mobile view */
+@media (max-width: 767px) {
+    .carousel-item {
+        display: block;
+    }
+
+    #header-carousel .carousel-caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    #header-carousel .carousel-caption .container {
+        padding: 0 15px;
+    }
+
+    #header-carousel .carousel-caption .row {
+        flex-direction: column-reverse;
+    }
+
+    #header-carousel .carousel-caption .col-10 {
+        margin-bottom: 20px;
+    }
+
+    #header-carousel .carousel-caption .col-lg-5 {
+        display: block;
+    }
     
+    /* Add a different image for mobile view */
+    #header-carousel .carousel-item.active img {
+        content: url('https://bmsit.ac.in/public/assets/images/slider/slider6.jpg');
+        width: 100%;
+    }
+
+    /* Add styles for other elements as needed */
+    #header-carousel .carousel-caption h6,
+    #header-carousel .carousel-caption h1,
+    #header-carousel .carousel-caption a.btn {
+        /* Add your styles here */
+
+    }
+
+@media screen and (max-width: 600px)
+.rs-banner-section {
+    min-height: 300px;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+}
+
+
+
     #header-carousel .carousel-item img {
         position: absolute;
         width: 100%;
