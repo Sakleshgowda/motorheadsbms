@@ -152,6 +152,31 @@
 /*** Header ***/
 
 
+
+/* Custom CSS for Media Screens */
+@media (max-width: 767px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px; /* Adjust the spacing between items */
+    }
+
+    .navbar-toggler {
+        order: -1; /* Move the toggle button to the top */
+    }
+
+    .navbar-collapse {
+        margin-top: 10px; /* Adjust the spacing between the logo and the menu items */
+    }
+
+    .navbar-brand {
+        margin-bottom: 10px; /* Adjust the spacing below the logo */
+    }
+}
+
 .carousel-control-prev,
 .carousel-control-next {
     width: 10%;
