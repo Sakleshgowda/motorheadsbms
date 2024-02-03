@@ -230,7 +230,7 @@
 
 @media screen and (max-width: 600px)
 .rs-banner-section {
-    min-height: 400px;
+    min-height: 300px;
     margin-top: 0px !important;
     margin-bottom: 0px !important;
 }
